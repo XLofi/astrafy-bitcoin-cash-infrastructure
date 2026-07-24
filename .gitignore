@@ -18,3 +18,5 @@ crash.*.log
 # OS
 .DS_Store
 Thumbs.db
+tfplan
+*.tfplan
