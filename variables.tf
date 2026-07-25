@@ -16,8 +16,10 @@ variable "billing_account_id" {
 }
 
 variable "org_id" {
-  description = "Google Cloud organization ID."
+  description = "Optional Google Cloud organization ID."
   type        = string
+  default     = null
+  nullable    = true
 }
 
 variable "region" {
@@ -29,5 +31,5 @@ variable "region" {
 variable "bigquery_location" {
   description = "BigQuery dataset location."
   type        = string
-  default     = "europe-west9"
+  default     = "US"
 }

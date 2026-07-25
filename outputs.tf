@@ -13,3 +13,9 @@ output "data_mart_dataset" {
 output "dbt_service_account_email" {
   value = google_service_account.dbt_ci.email
 }
+
+output "dbt_service_account_key" {
+  description = "JSON key used by dbt CI."
+  value       = base64decode(google_service_account_key.dbt_ci.private_key)
+  sensitive   = true
+}
