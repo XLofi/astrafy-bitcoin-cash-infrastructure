@@ -1,0 +1,6 @@
+project_id         = "astrafy-bch-xlofi-2026"
+project_name       = "Bitcoin Cash Analytics"
+billing_account_id = "XXXXXX-XXXXXX-XXXXXX"
+org_id             = null
+region             = "europe-west9"
+bigquery_location  = "US"

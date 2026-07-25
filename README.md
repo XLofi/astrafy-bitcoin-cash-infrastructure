@@ -55,12 +55,11 @@ data_mart
 ```text
 .
 ├── .gitignore
-├── apis.tf
 ├── bigquery.tf
 ├── iam.tf
-├── main.tf
 ├── outputs.tf
 ├── providers.tf
+├── project.tf
 ├── service_account.tf
 ├── service_account_key.tf
 ├── variables.tf
@@ -101,9 +100,12 @@ gcloud auth application-default set-quota-project astrafy-bch-xlofi-2026
 Create a local `terraform.tfvars` file:
 
 ```hcl
-project_id = "astrafy-bch-xlofi-2026"
-region     = "europe-west1"
-location   = "US"
+project_id         = "astrafy-bch-xlofi-2026"
+project_name       = "Bitcoin Cash Analytics"
+billing_account_id = "XXXXXX-XXXXXX-XXXXXX"
+org_id             = null
+region             = "europe-west9"
+bigquery_location  = "US"
 ```
 
 Depending on the variables defined by the project, additional values may be required.
