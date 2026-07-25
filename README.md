@@ -55,16 +55,18 @@ data_mart
 ```text
 .
 ├── .gitignore
+├── .terraform.lock.hcl
+├── README.md
 ├── bigquery.tf
 ├── iam.tf
 ├── outputs.tf
-├── providers.tf
 ├── project.tf
+├── providers.tf
 ├── service_account.tf
 ├── service_account_key.tf
+├── terraform.tfvars.example
 ├── variables.tf
-├── versions.tf
-└── README.md
+└── versions.tf
 ```
 
 The exact file structure may vary slightly as the project evolves.
