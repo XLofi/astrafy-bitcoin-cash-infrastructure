@@ -20,3 +20,4 @@ crash.*.log
 Thumbs.db
 tfplan
 *.tfplan
+*~
